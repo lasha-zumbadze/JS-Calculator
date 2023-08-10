@@ -275,6 +275,7 @@ const calc = function (first, oper, second) {
 // MAIN PART
 // ************************************************
 btnContainer.addEventListener('click', function (e) {
+  e.preventDefault();
   const btn = e.target.closest('.btn');
   if (!btn) return;
 
